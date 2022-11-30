@@ -1,0 +1,18 @@
+package org.study.basicPackage;
+
+public class StringEx3 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("String");
+		
+		String str="java 2022 project";
+		
+		System.out.println(str.length());
+		String str2=str.substring(5);
+		System.out.println(str2);
+		System.out.println(str);
+		
+		
+	}
+}

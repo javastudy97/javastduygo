@@ -1,0 +1,26 @@
+package org.study.network;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class ParseEx {
+	
+	public static void main(String[] args) {
+		
+		URL opinion =null;
+		URL join =null;
+		
+		try {
+			join = new URL("http://192.168.23.211:8092/springMVC1206/join");// 절대 경로로 URL 객체
+			opinion = new URL(join, "join"); // 상대 경로로 URL 객체 생
+		} catch (MalformedURLException e) {
+			System.out.println("잘못된 URL입니다.");
+		}
+		System.out.println("protocol =" + opinion.getProtocol()); // 프로토콜 
+		System.out.println("host =" + opinion.getHost()); // 호스트명
+		System.out.println("port =" + opinion.getPort());
+		System.out.println("path =" + opinion.getPath());
+		System.out.println("filename =" + opinion.getFile());
+		
+	}
+}

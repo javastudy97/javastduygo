@@ -1,0 +1,26 @@
+package org.study.gui;
+
+public class Test1129 {
+	public int date;
+	public int date2;
+	String str1;
+	
+	public Test1129() {
+		// TODO Auto-generated constructor stub
+	}
+	public Test1129(int date, int date2) {
+		this.date =date;
+		this.date2 =date2;
+	}
+	public Test1129(int date, int date2, String str1) {
+	}
+	
+	public static void main(String[] args) {
+		
+		Test1129 t1 = new Test1129();
+		Test1129 t2 = new Test1129(11, 12);
+		Test1129 t3 = new Test1129(11, 12 , "233");
+		
+	}
+	
+}

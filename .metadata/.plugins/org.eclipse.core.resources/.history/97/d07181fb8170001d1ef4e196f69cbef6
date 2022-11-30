@@ -1,0 +1,17 @@
+package org.study.dao;
+
+public class MemberDao {
+	public MemberDao() {
+		System.out.println("Dao");
+	}
+
+	public int insert(String userId, String userPw, int age) {
+		
+		int result =0;
+		//1. DB연동
+		
+		//2. SQL 실행
+		
+		return result;
+	}
+}

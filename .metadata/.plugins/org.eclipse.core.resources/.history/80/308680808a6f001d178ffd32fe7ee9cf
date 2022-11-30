@@ -1,0 +1,63 @@
+package org.study.gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class JMenu2 extends JFrame implements ActionListener{
+	
+	JPanel jpanel; //패널
+	JMenuBar jMenuBar; //메뉴바
+	JMenu jMenu1, jMenu2;//메뉴1, 2
+	JMenuItem jMenuItem1, jMenuItem2, jMenuItem3, exit;//메뉴아이디템
+	
+	
+	public JMenu2() {
+		super("JMenu2 예제");
+		jMenuBar= new JMenuBar();
+		this.setJMenuBar(jMenuBar); //1. 메뉴바 추가
+		
+		jMenu1 = new JMenu("파일"); //메뉴1
+		jMenu2 = new JMenu("도움말"); //메뉴2
+		
+		jMenuItem1= new JMenuItem("메뉴1");
+		jMenuItem2= new JMenuItem("새창");
+		jMenuItem3= new JMenuItem("메뉴3");
+		exit= new JMenuItem("닫기");
+		
+		//2 . 메뉴에 메뉴 아이템을 추가
+		jMenu1.add(jMenuItem1);
+		jMenu1.add(jMenuItem2);
+		jMenu1.add(jMenuItem3);
+		jMenu2.add(exit);
+//		jMenu1.add(new JMenuItem("새창"));
+		
+		//3.  메뉴바에 메뉴1, 메뉴2추가
+		jMenuBar.add(jMenu1);
+		jMenuBar.add(jMenu2);
+		
+		this.setSize(400, 300);
+		this.setVisible(true);
+		
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		new JMenu2();
+	}
+
+
+	
+}

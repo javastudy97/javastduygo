@@ -1,0 +1,17 @@
+package org.study.basicPackage;
+
+public class StringEx2 {
+	
+	public static void main(String[] args) {
+		System.out.println("String");
+		
+		String str1 = "java2022";
+		String str2 = new String("java2020");
+		char[] ch= {'j','a','v','a','2','0','2','0'};
+		String strCh =new String(ch);
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		
+	}
+}

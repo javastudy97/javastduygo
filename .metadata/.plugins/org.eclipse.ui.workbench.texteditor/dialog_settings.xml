@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="run()"/>
+		<list key="findhistory">
+			<item value="run()"/>
+			<item value="run"/>
+			<item value="st"/>
+			<item value="userPw"/>
+			<item value="userId"/>
+			<item value="user"/>
+			<item value="lists"/>
+			<item value="vt"/>
+			<item value="GenericEx1"/>
+			<item value="g1"/>
+			<item value="LocalTime"/>
+			<item value="dateTime"/>
+			<item value="Instace"/>
+			<item value="getInstace"/>
+			<item value="get"/>
+		</list>
+		<list key="replacehistory">
+			<item value="stack"/>
+			<item value="keyId"/>
+			<item value="dto"/>
+			<item value="user"/>
+			<item value="Gen3"/>
+			<item value="g2"/>
+			<item value="LocalDateTime"/>
+			<item value="dateTime2"/>
+			<item value="url"/>
+			<item value=""/>
+			<item value="query"/>
+			<item value="quary"/>
+			<item value="member5"/>
+			<item value="member4"/>
+			<item value="member3"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1121"/>
+		<item key="DIALOG_Y_ORIGIN" value="217"/>
+		<item key="DIALOG_WIDTH" value="337"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+</section>

@@ -1,0 +1,39 @@
+package org.study.thread;
+
+//1. 공유 자원 Synchronize
+class ShareStorage{
+	
+	//Thread공유자원
+	synchronized void storagePrint(String str) {
+		System.out.println(str);
+		for(int i=0; i<str.length(); i++) {
+			System.out.println(str.charAt(i));
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		
+	}
+}
+//2. Thread -> 공유 자원 Synchronize 접근
+class Thread4 extends Thread{
+	
+	@Override
+	public void run() {
+		for(int i=0; i<10 ; i++) {
+			
+		}
+	}
+}
+
+public class SynchronizeEx {
+	
+	public static void main(String[] args) {
+		
+		// 3. 1, 2 -> Thread 구현
+		
+		
+	}
+}

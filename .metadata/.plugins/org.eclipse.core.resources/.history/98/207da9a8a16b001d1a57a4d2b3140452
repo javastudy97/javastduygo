@@ -1,0 +1,11 @@
+package org.study.thread;
+
+public class Class1 {
+	
+	public Class1() {	
+		System.out.println("기본생성자");
+	}
+	public static void main(String[] args) {
+	
+	}
+}

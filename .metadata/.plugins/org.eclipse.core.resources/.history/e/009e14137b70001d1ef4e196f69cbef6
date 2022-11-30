@@ -1,0 +1,6 @@
+package org.study.commend;
+
+interface MemberCommend {
+
+	
+}

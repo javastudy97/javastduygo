@@ -1,0 +1,55 @@
+package org.study.basicPackage;
+
+public class StringEx3 {
+
+	public static void main(String[] args) {
+
+		System.out.println("String");
+
+		String str1 = "java 2022 project";
+
+		System.out.println(str1.length());
+		String str2 = str1.substring(5);
+		System.out.println(str2);
+		System.out.println(str1);
+
+		// substring(시작번지, 끝번지) 문자열을 시작번지부터 끝번지 앞추출
+		// length
+		System.out.println(str1.substring(5, 9));
+
+		// .do 제외한 문자열을 추출 -> 하나의 매서드 subString()
+		String query1 = "/insert.do";// -> /register"
+		String query2 = "/select.do";// " -> "/list"
+		String query3 = "/update.do";// -> "/modify"
+		String query4 = "/delete.do";// -> "/memberDelete
+
+		System.out.println(query4.substring(query4.length() - 3));
+		System.out.println(query4.substring(query4.length() - 3).length());
+
+		while (true) {
+			System.out.println("입력 문자열의 끝 3자리 값이 .do 일때 실행");
+			
+			String url=query4.substring(query4.length() - 3);
+			
+			if (!url.equals(".do")) {
+				System.out.println("입력값 오류!");
+				break;
+			} else {
+
+				// 끝자리 세자리가 .do로 입력을 받아서 .do제외한 문자열의 값이
+				// /insert면 -> 회원가입 실행
+				// /select면 -> 회원조회 실행
+				// /update면 -> 회원수정 실행
+				// /delete면 -> 회원탈퇴 실행
+				// /exit -> 종료
+				// 나머지 입력 되면 -> URI를 다시 입력하세요.
+				System.out.println(query1.substring(0, query1.length() - 3)); // -> "/insert
+				System.out.println(query2.substring(0, query2.length() - 3));
+				System.out.println(query3.substring(0, query3.length() - 3));
+				System.out.println(query4.substring(0, query4.length() - 3));
+			}
+
+		}
+
+	}
+}

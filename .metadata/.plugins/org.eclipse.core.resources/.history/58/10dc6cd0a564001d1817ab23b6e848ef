@@ -1,0 +1,27 @@
+package org.study.basicPackage;
+
+public class StringEx2 {
+	
+	public static void main(String[] args) {
+		System.out.println("String");
+		//String 생성 방법
+		String str1 = "java2020";
+		String str2 = new String("java2020");
+		char[] ch= {'j','a','v','a','2','0','2','0'};
+		String str3 =new String(ch);
+		System.out.println(str1);
+		System.out.println(str2);
+		System.out.println(str3);
+		
+		System.out.println("String 매서드");
+		
+		String strTest1="java 2022 project";
+		int size = strTest1.length();
+		System.out.println("문자열 길이: "+size);//17개 -> 16번지
+		char strTest1Ch = strTest1.charAt(5);
+		System.out.println(strTest1Ch);
+		
+//		strTest1.charAt(index);
+		
+	}
+}

@@ -1,0 +1,57 @@
+package org.study.gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+
+public class JMenu2 extends JFrame implements ActionListener{
+	
+	JPanel jpanel; //패널
+	JMenuBar jMenuBar; //메뉴바
+	JMenu jMenu1, jMenu2;//메뉴1, 2
+	JMenuItem jMenuItem1, jMenuItem2, jMenuItem3, exit;//메뉴아이디템
+	
+	
+	public JMenu2() {
+		super("JMenu2 예제");
+		jMenuBar= new JMenuBar();
+		
+		jMenu1 = new JMenu("파일");
+		jMenu2 = new JMenu("도움말");
+		
+		jMenuItem1= new JMenuItem("메뉴1");
+		jMenuItem2= new JMenuItem("새창");
+		jMenuItem3= new JMenuItem("메뉴3");
+		exit= new JMenuItem("닫기");
+		
+		jMenu1.add(jMenuItem1);
+		jMenu1.add(jMenuItem2);
+		jMenu1.add(jMenuItem3);
+		jMenu2.add(exit);
+//		jMenu1.add(new JMenuItem("새창"));
+		
+		this.setSize(400, 300);
+		this.setVisible(true);
+		
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+
+	
+}

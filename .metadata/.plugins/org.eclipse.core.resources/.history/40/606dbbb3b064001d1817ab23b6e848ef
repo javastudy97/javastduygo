@@ -1,0 +1,35 @@
+package org.study.basicPackage;
+
+public class StringEx3 {
+	
+	public static void main(String[] args) {
+		
+		System.out.println("String");
+		
+		String str1="java 2022 project";
+		
+		System.out.println(str1.length());
+		String str2=str1.substring(5);
+		System.out.println(str2);
+		System.out.println(str1);
+		
+		//substring(시작번지, 끝번지) 문자열을 시작번지부터 끝번지 앞추출
+		//length
+		System.out.println(str1.substring(5,9));
+		
+		// .do 제외한 문자열을 추출 -> 하나의 매서드 subString()
+		String query1="/register.do";// -> /register"
+		String query2="/list.do";//"  -> "/list"
+		String query3="/modify.do";// -> "/modify"
+		String query4="/memberDelete.do";//  -> "/memberDelete
+		
+		System.out.println(query1. substring(0, query1.length()-3)); // -> "/register"
+		System.out.println(query2. substring(0, query2.length()-3)); // -> "/list"
+		System.out.println(query3. substring(0, query3.length()-3)); // -> "/modify"
+		System.out.println(query4. substring(0, query4.length()-3)); // -> "/memberDelete
+
+		
+		
+		
+	}
+}

@@ -1,0 +1,8 @@
+package org.study.dbconnect;
+
+//DB연동
+public class DBConnect {
+
+	//1.jdbc드라이버 찾기
+	//2. DB연동(oracle)
+}

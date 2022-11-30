@@ -1,0 +1,31 @@
+package org.study.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import org.study.dbconnect.DBConnect;
+
+public class MemberDao {
+	public MemberDao() {
+		System.out.println("Dao");
+	}
+
+	public int insert(String userId, String userPw, int age) {
+		System.out.println("아이디: "+userId+", 비밀번호: "+userPw+", 나이: "+age);
+		int result =0;
+		
+		Connection conn=null; //DB연동
+		PreparedStatement pstm=null;// SQL처리
+		String query=""; //쿼리문
+		
+		//1. DB연동
+		//1-1 driver 찾기//1-2 DB연결
+		//Connect null -> 연결X
+		conn = DBConnect.getConnection();
+		query ="input into member(userId,userPw,age) value(?,?,?)";
+		
+		//2. SQL 실행
+		
+		return result;
+	}
+}

@@ -1,0 +1,28 @@
+package org.study.io;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileInputStreamEx {
+	
+	public static void main(String[] args) {
+		FileInputStream inFile=null;
+		
+		try {
+			inFile = new FileInputStream("C:\\Windows\\system.ini");
+			//파일과 연결된 바이트 스트림을 생성
+			int inData;
+			while((inData=inFile.read())!=-1) {
+				System.out.println();
+			}
+			
+		} catch (FileNotFoundException e) {
+			System.out.println("파일 예외");
+			e.printStackTrace();
+		} catch (IOException e) {
+			System.out.println("입출력 예외");
+			e.printStackTrace();
+		}
+	}
+}

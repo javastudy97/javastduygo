@@ -1,0 +1,29 @@
+package org.study.gui;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+public class JMenu2 extends JFrame implements ActionListener{
+	
+	public JMenu2() {
+		super("JMenu2 제목");
+		
+		
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+
+	
+}

@@ -1,0 +1,66 @@
+package org.study.gui;
+
+import java.util.Date;
+
+class A{
+	public A() {
+		System.out.println("A기본생성자");
+	}
+}
+
+interface A1{
+	void m1(int a);
+}
+class B{
+	A a;
+	A1 a1;
+	Date day;
+	
+	public B() {
+		System.out.println("기본생성자");
+	}
+	public B(A a) {
+		this.a=a;
+	}	
+	public void dayMethod(Date day) {
+		this.day = day;
+		System.out.println();
+	}
+	public A getA() {
+		return a;
+	}
+	
+	public Date getDay() {
+		return day;
+	}
+	public void interM(A1 a1) {
+		this.a1 =a1;
+	}
+	
+	
+	
+}
+
+
+
+
+public class ClassDI {
+	
+	public static void main(String[] args) {
+		
+		new B(new A());
+		new B().interM(new A1() {
+			
+			@Override
+			public void m1(int a) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		new B().interM((int a)->{
+			System.out.println("A1인터페이스 interM매서드구현-> 람다식");
+		});
+		
+		
+	}
+}

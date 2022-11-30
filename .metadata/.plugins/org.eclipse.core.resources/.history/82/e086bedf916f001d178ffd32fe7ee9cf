@@ -1,0 +1,16 @@
+package org.study.gui;
+
+public class Test1129 {
+	
+	
+	public Test1129(int date, int date2) {
+	}
+	public Test1129(int date, int date2, String str1) {
+	}
+	
+	public static void main(String[] args) {
+		Test1129 n1 = new Test1129(11, 12);
+		System.out.println(n1);
+	}
+	
+}

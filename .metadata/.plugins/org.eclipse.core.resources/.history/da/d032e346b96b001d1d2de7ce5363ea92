@@ -1,0 +1,15 @@
+package org.study.io;
+
+import java.io.InputStream;
+
+public class IOBasicEx {
+
+	public static void main(String[] args) {
+		
+		System.out.println("IO");
+		
+		InputStream inputStream = System.in;
+		
+		
+	}
+}

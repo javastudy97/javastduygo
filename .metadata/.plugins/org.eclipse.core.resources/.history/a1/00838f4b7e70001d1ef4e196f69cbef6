@@ -1,0 +1,12 @@
+package org.study.controller;
+
+public class MemberController {
+	
+	public static void main(String[] args) {
+		// Controller	->	
+		// 1.사용자 요청(Request) 받아서 
+		// 2.일을 시키고 
+		// 3.결과 받아서 반환값을 이용해서 
+		// 4.다시 View로 응답(Response)
+	}
+}

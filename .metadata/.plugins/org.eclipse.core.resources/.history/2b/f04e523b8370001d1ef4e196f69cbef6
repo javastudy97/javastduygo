@@ -1,0 +1,17 @@
+package org.study.dao;
+
+public class MemberDao {
+	public MemberDao() {
+		System.out.println("Dao");
+	}
+
+	public int insert(String userId, String userPw, int age) {
+		System.out.println("아이디: "+userId+", 비밀번호: "+userPw+", 나이: "+age);
+		int result =0;
+		//1. DB연동
+		
+		//2. SQL 실행
+		
+		return result;
+	}
+}
