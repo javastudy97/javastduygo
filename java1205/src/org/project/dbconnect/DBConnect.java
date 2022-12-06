@@ -19,7 +19,7 @@ public class DBConnect {
 			System.out.println("Driver Ok!!");
 			
 			conn=DriverManager.getConnection(url, user, passward);
-			System.out.println("DB connect fail!!");
+			System.out.println("DB connect Ok!!");
 		} catch (ClassNotFoundException e) {
 			System.out.println("Driver Null!!");
 			e.printStackTrace();
